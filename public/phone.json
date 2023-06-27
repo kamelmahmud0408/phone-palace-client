@@ -1,0 +1,580 @@
+ [
+      {
+        "_id": "60e61a8a8e6e6c001faf27a1",
+        "name": "iPhone 13 Pro",
+        "image": "https://brotherselectronicsbd.com/image/cache/catalog/demo/product/Apple/13%20Pro%20Max/iPhone-13-Pro-Max-4-800x800.png",
+        "price": 1299,
+        "category": "Flagship",
+        "features": [
+          "A15 Bionic chip",
+          "Super Retina XDR display",
+          "Triple camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27a2",
+        "name": "Samsung Galaxy S21 Ultra",
+        "image": "https://images-eu.ssl-images-amazon.com/images/I/81pMqq5VCRL._AC_UL600_SR600,600_.jpg",
+        "price": 1199,
+        "category": "Flagship",
+        "features": [
+          "Exynos 2100 / Snapdragon 888",
+          "Dynamic AMOLED 2X display",
+          "108MP quad camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27a3",
+        "name": "Google Pixel 6 Pro",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/3784-95312.jpg",
+        "price": 999,
+        "category": "Flagship",
+        "features": [
+          "Google Tensor chip",
+          "OLED display",
+          "50MP main camera"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27a4",
+        "name": "OnePlus 9",
+        "image": "https://5.imimg.com/data5/SELLER/Default/2021/12/ZM/HC/UP/137994279/oneplus-9-pro-500x500.jpg",
+        "price": 899,
+        "category": "Flagship",
+        "features": [
+          "Snapdragon 888",
+          "Fluid AMOLED display",
+          "48MP triple camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27a5",
+        "name": "Xiaomi Redmi Note 10 Pro",
+        "image": "https://www.gizmochina.com/wp-content/uploads/2021/03/Xiaomi-Redmi-Note-10-Pro-Max-500x500.jpg",
+        "price": 299,
+        "category": "Mid-range",
+        "features": [
+          "Snapdragon 732G",
+          "Super AMOLED display",
+          "64MP quad camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27a6",
+        "name": "Huawei P40 Pro",
+        "image": "https://www.mobiledokan.co/wp-content/uploads/2020/03/Huawei-P40-Pro-Gold.jpg",
+        "price": 899,
+        "category": "Flagship",
+        "features": [
+          "Kirin 990 5G",
+          "OLED display",
+          "50MP quad camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27a7",
+        "name": "Sony Xperia 1 III",
+        "image": "https://i0.wp.com/mobileview24.com/wp-content/uploads/2021/04/Sony-Xperia-1-III-500x500.jpg",
+        "price": 1199,
+        "category": "Flagship",
+        "features": [
+          "Snapdragon 888",
+          "6.5-inch 4K HDR OLED display",
+          "Triple camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27a8",
+        "name": "LG Velvet",
+        "image": "https://www.mobileghor.com/wp-content/uploads/2020/08/LG-Velvet-5G.jpg",
+        "price": 599,
+        "category": "Mid-range",
+        "features": [
+          "Snapdragon 765G",
+          "OLED display",
+          "48MP triple camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27a9",
+        "name": "Motorola Moto G Power",
+        "image": "https://www.mobiledokan.co/wp-content/uploads/2021/11/Motorola-Moto-G-Power-2022-Black.jpg",
+        "price": 199,
+        "category": "Budget",
+        "features": [
+          "Snapdragon 662",
+          "6.6-inch HD+ display",
+          "5000mAh battery"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27aa",
+        "name": "Nokia 8.3 5G",
+        "image": "https://www.bdprice.com.bd/wp-content/uploads/2020/08/Nokia-8.3-5G-1.jpg",
+        "price": 499,
+        "category": "Mid-range",
+        "features": [
+          "Snapdragon 765G",
+          "6.81-inch FHD+ display",
+          "64MP quad camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27ab",
+        "name": "ASUS ROG Phone 5",
+        "image": "https://image.oppo.com/content/dam/oppo/common/mkt/v2-2/reno6-5g-oversea/listpage/Phone-list-product-list-Arctic-Blue-427-x-600.png.thumb.webp",
+        "price": 999,
+        "category": "Gaming",
+        "features": [
+          "Snapdragon 888",
+          "6.78-inch AMOLED display",
+          "6000mAh battery"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27ac",
+        "name": "Oppo Find X3 Pro",
+        "image": "https://image.oppo.com/content/dam/oppo/common/mkt/v2-2/reno6-5g-oversea/listpage/Phone-list-product-list-Arctic-Blue-427-x-600.png.thumb.webp",
+        "price": 1099,
+        "category": "Flagship",
+        "features": [
+          "Snapdragon 888",
+          "6.7-inch AMOLED display",
+          "Quad camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27ad",
+        "name": "Realme 8 Pro",
+        "image": "https://www.mobileghor.com/wp-content/uploads/2021/05/Realme-8-Pro-Infinite-Blue.jpg",
+        "price": 299,
+        "category": "Mid-range",
+        "features": [
+          "Snapdragon 720G",
+          "Super AMOLED display",
+          "108MP quad camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27ae",
+        "name": "Xiaomi Mi 11 Ultra",
+        "image": "https://adminapi.applegadgetsbd.com/storage/media/large/2675-93346.jpg",
+        "price": 1199,
+        "category": "Flagship",
+        "features": [
+          "Snapdragon 888",
+          "6.81-inch AMOLED display",
+          "50MP triple camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27af",
+        "name": "Samsung Galaxy A52",
+        "image": "https://www.mobiledokan.com/wp-content/uploads/2021/03/Samsung-Galaxy-A52-image.jpg",
+        "price": 399,
+        "category": "Mid-range",
+        "features": [
+          "Snapdragon 720G",
+          "Super AMOLED display",
+          "64MP quad camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27b0",
+        "name": "Google Pixel 5a",
+        "image": "https://www.gizmochina.com/wp-content/uploads/2021/02/pixel-5a-500x500.jpg",
+        "price": 449,
+        "category": "Mid-range",
+        "features": [
+          "Snapdragon 765G",
+          "OLED display",
+          "Dual camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27b1",
+        "name": "OnePlus Nord CE 5G",
+        "image": "https://oasis.opstatics.com/content/dam/oasis/page/2021/ebba/spec/Silver-Ray.png",
+        "price": 399,
+        "category": "Mid-range",
+        "features": [
+          "Snapdragon 750G",
+          "Fluid AMOLED display",
+          "64MP triple camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27b2",
+        "name": "Sony Xperia 5 II",
+        "image": "https://static.toiimg.com/thumb/resizemode-4,msid-77857297,imgsize-500,width-800/77857297.jpg",
+        "price": 999,
+        "category": "Flagship",
+        "features": [
+          "Snapdragon 865",
+          "6.1-inch OLED display",
+          "Triple camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27b3",
+        "name": "Motorola Razr 5G",
+        "image": "https://www.mobiledokan.co/wp-content/uploads/2020/07/Motorola-Razr-5G-Blush-Gold.jpg",
+        "price": 1399,
+        "category": "Foldable",
+        "features": [
+          "Snapdragon 765G",
+          "Foldable P-OLED display",
+          "48MP main camera"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27b4",
+        "name": "Xiaomi Redmi 9",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrZTaIgvyUy7JUlF6Aef7lbZbQ2VhQoZXLb_xUf1Ny5pZOtGyCZlNU-Z7VEaU5TATA7Us&usqp=CAU",
+        "price": 149,
+        "category": "Budget",
+        "features": [
+          "MediaTek Helio G80",
+          "6.53-inch IPS display",
+          "13MP dual camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27b5",
+        "name": "Samsung Galaxy Z Fold 3",
+        "image": "https://www.mobiledokan.co/wp-content/uploads/2020/11/Samsung-Galaxy-Z-Fold3-5G.jpg",
+        "price": 1799,
+        "category": "Foldable",
+        "features": [
+          "Snapdragon 888",
+          "7.6-inch Dynamic AMOLED display",
+          "Triple camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27b6",
+        "name": "iPhone SE (2020)",
+        "image": "https://www.mobiledokan.co/wp-content/uploads/2019/11/Apple-iPhone-SE-2020-Red.jpg",
+        "price": 399,
+        "category": "Mid-range",
+        "features": [
+          "A13 Bionic chip",
+          "Retina HD display",
+          "12MP camera"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27b7",
+        "name": "Google Pixel 4a",
+        "image": "https://farazitechnology.com.bd/wp-content/uploads/2023/02/941117593.jpg",
+        "price": 349,
+        "category": "Mid-range",
+        "features": [
+          "Snapdragon 730G",
+          "OLED display",
+          "12MP camera"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27b8",
+        "name": "OnePlus 8T",
+        "image": "https://oasis.opstatics.com/content/dam/oasis/default/product-specs/8t-green.png",
+        "price": 749,
+        "category": "Flagship",
+        "features": [
+          "Snapdragon 865",
+          "Fluid AMOLED display",
+          "48MP quad camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27b9",
+        "name": "Sony Xperia 10 III",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS2Ip39vSibSwltLRDxpz79Vr-FA8c-rKXd32d3JCpMJq7QgP1mGe7lA3QpE3619xTYtM&usqp=CAU",
+        "price": 699,
+        "category": "Mid-range",
+        "features": [
+          "Snapdragon 690",
+          "6.0-inch OLED display",
+          "Triple camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27ba",
+        "name": "Motorola Edge+",
+        "image": "https://www.mobiledokan.co/wp-content/uploads/2020/03/Motorola-Edge-Plus-Blue.jpg",
+        "price": 999,
+        "category": "Flagship",
+        "features": [
+          "Snapdragon 865",
+          "6.7-inch OLED display",
+          "108MP triple camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27bb",
+        "name": "Xiaomi Poco X3 Pro",
+        "image": "https://www.mobiledokan.co/wp-content/uploads/2021/02/Xiaomi-Poco-X3-Pro-Blue.jpg",
+        "price": 249,
+        "category": "Mid-range",
+        "features": [
+          "Snapdragon 860",
+          "6.67-inch IPS display",
+          "48MP quad camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27bc",
+        "name": "Samsung Galaxy A72",
+        "image": "https://www.mobiledokan.com/wp-content/uploads/2021/03/Samsung-Galaxy-A72-image.jpg",
+        "price": 449,
+        "category": "Mid-range",
+        "features": [
+          "Snapdragon 720G",
+          "Super AMOLED display",
+          "64MP quad camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27bd",
+        "name": "Google Pixel 4 XL",
+        "image": "https://www.gsmmark.com/wp-content/uploads/2021/12/Google-Pixel-4XL-600x599.jpg",
+        "price": 899,
+        "category": "Flagship",
+        "features": [
+          "Snapdragon 855",
+          "6.3-inch OLED display",
+          "Dual camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27be",
+        "name": "OnePlus 7T",
+        "image": "https://www.mobiledokan.com/wp-content/uploads/2020/04/OnePlus-7T-silver.jpg",
+        "price": 599,
+        "category": "Flagship",
+        "features": [
+          "Snapdragon 855+",
+          "Fluid AMOLED display",
+          "48MP triple camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27bf",
+        "name": "Sony Xperia 5",
+        "image": "https://i0.wp.com/www.mobilebd.co/wp-content/uploads/2020/07/Sony-Xperia-5-Official-image-500x500.jpg",
+        "price": 799,
+        "category": "Flagship",
+        "features": [
+          "Snapdragon 855",
+          "6.1-inch OLED display",
+          "Triple camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27c0",
+        "name": "Motorola Moto G Stylus (2021)",
+        "image": "https://fdn2.gsmarena.com/vv/bigpic/motorola-moto-g-stylus-2022.jpg",
+        "price": 299,
+        "category": "Mid-range",
+        "features": [
+          "Snapdragon 678",
+          "6.8-inch FHD+ display",
+          "48MP quad camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27c1",
+        "name": "Xiaomi Redmi Note 9 Pro",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT43Z06Q4khAC27_SL_OmOtkPJQD_mRD8Wla-TULN9rrOwZ2MSNI7UMVgLtGBUfBhupNc0&usqp=CAU",
+        "price": 249,
+        "category": "Mid-range",
+        "features": [
+          "Snapdragon 720G",
+          "6.67-inch IPS display",
+          "64MP quad camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27c2",
+        "name": "Samsung Galaxy M31",
+        "image": "https://www.mobiledokan.co/wp-content/uploads/2019/12/Samsung-Galaxy-M31-Blue.jpg",
+        "price": 249,
+        "category": "Mid-range",
+        "features": [
+          "Exynos 9611",
+          "6.4-inch Super AMOLED display",
+          "64MP quad camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27c3",
+        "name": "Google Pixel 3a",
+        "image": "https://www.mobiledokan.com/wp-content/uploads/2019/09/Google-Pixel-3a.jpg",
+        "price": 399,
+        "category": "Mid-range",
+        "features": [
+          "Snapdragon 670",
+          "5.6-inch OLED display",
+          "12.2MP camera"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27c4",
+        "name": "OnePlus Nord",
+        "image": "https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-nord-2.jpg",
+        "price": 499,
+        "category": "Mid-range",
+        "features": [
+          "Snapdragon 765G",
+          "Fluid AMOLED display",
+          "48MP quad camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27c5",
+        "name": "Sony Xperia 10 II",
+        "image": "https://i0.wp.com/www.mobiledokan.net/wp-content/uploads/2020/02/Sony-Xperia-10-II.jpg?fit=500%2C500&ssl=1",
+        "price": 399,
+        "category": "Mid-range",
+        "features": [
+          "Snapdragon 665",
+          "6.0-inch OLED display",
+          "Triple camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27c6",
+        "name": "Motorola Moto G9 Power",
+        "image": "https://www.mobiledokan.co/wp-content/uploads/2020/11/Motorola-Moto-G9-Power-Gray.jpg",
+        "price": 249,
+        "category": "Budget",
+        "features": [
+          "Snapdragon 662",
+          "6.8-inch HD+ display",
+          "6000mAh battery"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27c7",
+        "name": "Xiaomi Redmi Note 10 Pro",
+        "image": "https://www.gizmochina.com/wp-content/uploads/2021/03/Xiaomi-Redmi-Note-10-Pro-Max.jpg",
+        "price": 279,
+        "category": "Mid-range",
+        "features": [
+          "Snapdragon 732G",
+          "6.67-inch Super AMOLED display",
+          "108MP quad camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27c8",
+        "name": "Samsung Galaxy A51",
+        "image": "https://mobileinto.com/images/Samsung-Galaxy-A51-5G.jpg",
+        "price": 399,
+        "category": "Mid-range",
+        "features": [
+          "Exynos 9611",
+          "6.5-inch Super AMOLED display",
+          "48MP quad camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27c9",
+        "name": "Google Pixel 3 XL",
+        "image": "https://i0.wp.com/www.mobilebd.co/wp-content/uploads/2021/03/Google-Pixel-3a-XL-Official-images.png?fit=600%2C600&ssl=1",
+        "price": 499,
+        "category": "Mid-range",
+        "features": [
+          "Snapdragon 845",
+          "6.3-inch OLED display",
+          "Dual camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27ca",
+        "name": "OnePlus 7 Pro",
+        "image": "https://www.gizmochina.com/wp-content/uploads/2019/05/oneplus_7_pro--500x500.jpg",
+        "price": 699,
+        "category": "Flagship",
+        "features": [
+          "Snapdragon 855",
+          "Fluid AMOLED display",
+          "48MP triple camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27cb",
+        "name": "Sony Xperia 1 II",
+        "image": "https://m.media-amazon.com/images/I/518iNZeR0iL._AC_UF1000,1000_QL80_.jpg",
+        "price": 1199,
+        "category": "Flagship",
+        "features": [
+          "Snapdragon 865",
+          "6.5-inch OLED display",
+          "Quad camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27cc",
+        "name": "Motorola Moto G Power (2020)",
+        "image": "https://fdn2.gsmarena.com/vv/bigpic/motorola-moto-g-stylus-.jpg",
+        "price": 249,
+        "category": "Budget",
+        "features": [
+          "Snapdragon 665",
+          "6.4-inch FHD+ display",
+          "5000mAh battery"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27cd",
+        "name": "Xiaomi Redmi Note 8 Pro",
+        "image": "https://www.gsmmark.com/wp-content/uploads/2022/07/Xiaomi-Redmi-Note-8-Pro.jpg.webp",
+        "price": 249,
+        "category": "Mid-range",
+        "features": [
+          "Mediatek Helio G90T",
+          "6.53-inch IPS display",
+          "64MP quad camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27ce",
+        "name": "Samsung Galaxy M21",
+        "image": "https://www.mobiledokan.co/wp-content/uploads/2021/06/Samsung-Galaxy-M21-2021-Arctic-Blue.jpg",
+        "price": 199,
+        "category": "Budget",
+        "features": [
+          "Exynos 9611",
+          "6.4-inch Super AMOLED display",
+          "48MP triple camera system"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27cf",
+        "name": "Google Pixel 2 XL",
+        "image": "https://www.gsmmark.com/wp-content/uploads/2021/12/Google-Pixel-2-XL-599x600.jpg",
+        "price": 399,
+        "category": "Mid-range",
+        "features": [
+          "Snapdragon 835",
+          "6.0-inch OLED display",
+          "Single camera"
+        ]
+      },
+      {
+        "_id": "60e61a8a8e6e6c001faf27d0",
+        "name": "OnePlus 6T",
+        "image": "https://pricemama.com.bd/wp-content/uploads/2018/12/oneplus-6t-6gb-128gb-2.jpg",
+        "price": 549,
+        "category": "Flagship",
+        "features": [
+          "Snapdragon 845",
+          "6.41-inch Optic AMOLED display",
+          "Dual camera system"
+        ]
+      }
+    ]
+  
+  

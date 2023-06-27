@@ -33,7 +33,7 @@ const Navbar = () => {
             >
                 <ul className="flex items-center gap-1 py-2 text-lg">
                     <li className="px-6 hover:text-cyan-600"><Link to='/'>Home</Link></li>
-                    <li className="px-6 hover:text-cyan-600"><Link to='/about'>About</Link></li>
+                    <li className="px-6 hover:text-cyan-600"><Link to='/phones'>Phones</Link></li>
                     <li className="px-6 hover:text-cyan-600"><Link to='/skills'>Skills</Link></li>
                     <li className="px-6 hover:text-cyan-600"><Link to='/projects'>Projects</Link></li>
                     <li className="px-6 hover:text-cyan-600"><Link to='/login'>login</Link></li>
