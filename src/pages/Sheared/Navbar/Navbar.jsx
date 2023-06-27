@@ -8,7 +8,7 @@ const Navbar = () => {
     const { logOut, user } = useContext(AuthContext)
     const [sticky, setSticky] = useState(false);
     const [open, setOpen] = useState(false);
-    const [isAdmin]=useAdmin()
+    const [isAdmin] = useAdmin()
     const [cart] = useCart()
 
     useEffect(() => {
@@ -53,16 +53,17 @@ const Navbar = () => {
                                 <div className="badge badge-secondary">+{cart?.length || 0}</div>
                             </button>
                         </Link></li>
-                        {
-                            isAdmin ? <li><Link to='/dashboard/allusers'>Dashboard</Link></li> : <li><Link to='/dashboard/mycart'>Dashboard</Link></li>
-                        }
-                        
+
+
 
 
                         {
                             user ? <div>{
                                 user && <span className='text-black flex flex-col lg:flex-row lg:items-center gap-4'>
-                                    
+                                    {
+                                        isAdmin ? <li><Link to='/dashboard/allusers'>Dashboard</Link></li> : <li><Link to='/dashboard/mycart'>Dashboard</Link></li>
+                                    }
+
                                     <li className="px-6 hover:text-cyan-600"> <div className='tooltip text-start' data-tip={user.displayName}  ><img className='w-10 h-10 rounded-full tooltip' src={user.photoURL} alt="" /></div></li> <li className="px-6 hover:text-cyan-600"><Link onClick={handleLogOut} to='/login'>LogOut</Link></li> </span>
                             }</div> : <li className="px-6 hover:text-cyan-600"><Link to='/login'>login</Link></li>
                         }
@@ -89,10 +90,23 @@ const Navbar = () => {
                     <ul className="flex flex-col  h-full gap-10 py-2 text-lg">
 
                         <li onClick={() => setOpen(false)} className="px-6 hover:text-cyan-600"><Link to='/'>Home</Link></li>
-                        <li onClick={() => setOpen(false)} className="px-6 hover:text-cyan-600"><Link to='/about'>About</Link></li>
-                        <li onClick={() => setOpen(false)} className="px-6 hover:text-cyan-600"><Link to='/skills'>Skills</Link></li>
-                        <li onClick={() => setOpen(false)} className="px-6 hover:text-cyan-600"><Link to='/projects'>Projects</Link></li>
-                        <li onClick={() => setOpen(false)} className="px-6 hover:text-cyan-600"><Link to='/contact'>Contact</Link></li>
+                        <li onClick={() => setOpen(false)} className="px-6 hover:text-cyan-600"><Link to='/phones'>All Phones</Link></li>
+                        <li onClick={() => setOpen(false)}  className="px-6 hover:text-cyan-600"><Link to='/dashboard/mycart'>
+                            <button className="btn gap-2">
+                                <ion-icon name="cart"></ion-icon>
+                                <div className="badge badge-secondary">+{cart?.length || 0}</div>
+                            </button>
+                        </Link></li>
+                        {
+                            user ? <div>{
+                                user && <span className='text-black flex flex-col lg:flex-row lg:items-center gap-4'>
+                                    {
+                                        isAdmin ? <li onClick={() => setOpen(false)} ><Link to='/dashboard/allusers'>Dashboard</Link></li> : <li onClick={() => setOpen(false)} ><Link to='/dashboard/mycart'>Dashboard</Link></li>
+                                    }
+
+                                    <li onClick={() => setOpen(false)}  className="px-6 hover:text-cyan-600"> <div className='tooltip text-start' data-tip={user.displayName}  ><img className='w-10 h-10 rounded-full tooltip' src={user.photoURL} alt="" /></div></li> <li className="px-6 hover:text-cyan-600"><Link onClick={handleLogOut} to='/login'>LogOut</Link></li> </span>
+                            }</div> : <li onClick={() => setOpen(false)}  className="px-6 hover:text-cyan-600"><Link to='/login'>login</Link></li>
+                        }
 
                     </ul>
                 </div>

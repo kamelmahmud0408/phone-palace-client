@@ -10,6 +10,7 @@ import Dashboard from '../layout/Dashboard';
 import MyCart from '../pages/Dashboard/MyCart/MyCart';
 import AllUser from '../pages/Dashboard/AllUser/AllUser';
 import AdminRoute from './AdminRoute';
+import AddPhone from '../pages/Dashboard/AddPhone/AddPhone';
 
 const router = createBrowserRouter([
    {
@@ -40,12 +41,16 @@ const router = createBrowserRouter([
     children:[
        {
         path:'mycart',
-        element: <MyCart></MyCart>
+        element: <PrivetRoute><MyCart></MyCart></PrivetRoute>
        }
        ,
        {
         path:'allusers',
         element:<AdminRoute><AllUser></AllUser></AdminRoute>
+       },
+       {
+        path:'addphone',
+        element:<AdminRoute><AddPhone></AddPhone></AdminRoute>
        }
         
     ]

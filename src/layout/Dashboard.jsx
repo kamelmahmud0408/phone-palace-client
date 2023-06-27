@@ -23,13 +23,12 @@ const Dashboard = () => {
                     {
                         isAdmin ? <>
                             <li><NavLink to='/dashboard/adminhome'>Admin Home</NavLink></li>
-                            <li><NavLink to='/dashboard/additem'> Add an Items</NavLink></li>
-                            <li><NavLink to='/dashboard/manageitems'>Manage Items</NavLink></li>
+                            <li><NavLink to='/dashboard/addphone'> Add an phone</NavLink></li>
+                            <li><NavLink to='/dashboard/manageitems'>Manage phone</NavLink></li>
                             <li><NavLink to='/dashboard/allusers'> All Users</NavLink></li>
 
                         </> : <>
                             <li><NavLink to='/dashboard/userhome'>User Home</NavLink></li>
-                            <li><NavLink to='/dashboard/reservation'>Reservation</NavLink></li>
                             <li><NavLink to='/dashboard/history'>Payment History</NavLink></li>
                             <li><NavLink to='/dashboard/mycart'>My Cart <span className="badge badge-secondary">+{cart?.length || 0}</span></NavLink></li>
                         </>
@@ -37,8 +36,7 @@ const Dashboard = () => {
 
                     <div className="divider">OR</div>
                     <li><NavLink to='/'>Home</NavLink></li>
-                    <li><NavLink to='/menu'>Our Menu</NavLink></li>
-                    <li><NavLink to='order/dessert'>Our Order</NavLink></li>
+                    <li><NavLink to='/phones'>All Phones</NavLink></li>
 
                 </ul>
             </div>

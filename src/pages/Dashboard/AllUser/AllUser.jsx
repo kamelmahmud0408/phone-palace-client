@@ -51,7 +51,7 @@ const AllUser = () => {
                             <td>{user.name}</td>
                             <td>{user.email}</td>
                             <td>{
-                                user.role=== 'admin' ? 'admin' : <button onClick={()=>handleMakeAdmin(user)} className="btn btn-ghost  bg-red-500 text-white">admin</button>}</td>
+                                user.role=== 'admin' ? 'admin' : <button onClick={()=>handleMakeAdmin(user)} className="btn btn-ghost  bg-cyan-500 text-black"><ion-icon name="person-add"></ion-icon></button>}</td>
                             {/* <td>
                                 {/* <button onClick={() => handleDelete(user)} className="btn btn-ghost  bg-red-500 text-white"><FaTrashAlt></FaTrashAlt></button>
                                 </td> */} 

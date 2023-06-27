@@ -42,7 +42,7 @@ const MyCart = () => {
             <div className='uppercase font-semibold h-[70px] flex justify-around items-center'>
                 <h2 className='text-3xl '>Total Items: {cart.length}</h2>
                 <h2 className='text-3xl '>Total Price: ${total}</h2>
-                <Link to='/dashboard/payment'><button className='btn btn-warning btn-sm'>Pay</button></Link>
+                <Link to='/dashboard/payment'><button className=' btn-primary btn-sm'>PAY</button></Link>
             </div>
             <div className="overflow-x-auto w-full">
                 <table className="table w-full">
@@ -75,7 +75,7 @@ const MyCart = () => {
                                 </td>
                                 <td>{item.price}</td>
                                 <td>
-                                    <button onClick={() => handleDelete(item)} className="btn btn-ghost  bg-red-500 text-white"></button>
+                                    <button onClick={() => handleDelete(item)} className="btn btn-ghost  bg-cyan-500 text-black text-lg"><ion-icon name="trash"></ion-icon></button>
                                 </td>
                             </tr>)
 
