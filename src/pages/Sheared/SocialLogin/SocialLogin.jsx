@@ -13,20 +13,20 @@ const SocialLogin = () => {
     const handleGoogle=()=>{
         googleSignin()
         .then(result => {
-            // const loggedUser = result.user;
-            // console.log(loggedUser);
-            // const saveUser = { name: loggedUser.displayName, image: loggedUser.photoURL, email: loggedUser.email }
-            // fetch('https://summer-camp-learning-school-server-kamelmahmud0408.vercel.app/users', {
-            //     method: 'POST',
-            //     headers: {
-            //         'content-type': 'application/json'
-            //     },
-            //     body: JSON.stringify(saveUser)
-            // })
-            //     .then(res => res.json())
-            //     .then(() => {
-            //         navigate(from, { replace: true });
-            //     })
+            const loggedUser = result.user;
+            console.log(loggedUser);
+            const saveUser = { name: loggedUser.displayName, image: loggedUser.photoURL, email: loggedUser.email }
+            fetch('https://summer-camp-learning-school-server-kamelmahmud0408.vercel.app/users', {
+                method: 'POST',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(saveUser)
+            })
+                .then(res => res.json())
+                .then(() => {
+                    navigate(from, { replace: true });
+                })
         })
     }
 

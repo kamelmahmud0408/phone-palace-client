@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link} from 'react-router-dom';
+import { AuthContext } from '../../../provider/AuthProvider';
 
 const Navbar = () => {
-
+  const{logOut, user}=useContext(AuthContext)
     const [sticky, setSticky] = useState(false);
     const [open, setOpen] = useState(false);
 
@@ -12,6 +13,14 @@ const Navbar = () => {
             window.scrollY > 0 ? setSticky(true) : setSticky(false);
         });
     }, []);
+
+    const handleLogOut = () => {
+        logOut()
+            .then(result => {
+
+            })
+            .catch()
+    }
 
 
 
@@ -36,7 +45,17 @@ const Navbar = () => {
                     <li className="px-6 hover:text-cyan-600"><Link to='/phones'>Phones</Link></li>
                     <li className="px-6 hover:text-cyan-600"><Link to='/skills'>Skills</Link></li>
                     <li className="px-6 hover:text-cyan-600"><Link to='/projects'>Projects</Link></li>
-                    <li className="px-6 hover:text-cyan-600"><Link to='/login'>login</Link></li>
+
+                    
+                        {
+                            user ? <div>{
+                                user && <span className='text-black flex flex-col lg:flex-row lg:items-center gap-4'>
+                                    <li className="px-6 hover:text-cyan-600"><Link to='/dashboard'>Dashboard</Link></li>
+                                    <li className="px-6 hover:text-cyan-600"> <div className='tooltip text-start' data-tip={user.displayName}  ><img className='w-10 h-10 rounded-full tooltip' src={user.photoURL} alt="" /></div></li> <li  className="px-6 hover:text-cyan-600"><Link onClick={handleLogOut} to='/login'>LogOut</Link></li> </span>
+                            }</div> : <li className="px-6 hover:text-cyan-600"><Link to='/login'>login</Link></li>
+                        }
+                    
+                    
                       
                 </ul>
             </div>

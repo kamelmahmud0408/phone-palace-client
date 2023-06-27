@@ -5,7 +5,7 @@ const Phones = () => {
     const [phones , setPhones]=useState([])
 
     useEffect(()=>{
-        fetch('phone.json')
+        fetch('http://localhost:5000/phones')
         .then(res=> res.json())
         .then( data => {
             setPhones(data)

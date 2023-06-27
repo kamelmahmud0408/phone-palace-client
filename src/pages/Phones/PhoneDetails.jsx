@@ -7,7 +7,7 @@ const PhoneDetails = ({ phone }) => {
             <figure><img className='object-cover h-96' src={image} alt="phone" /></figure>
             <div className="card-body">
                 <h2 className="card-title">{name}</h2>
-                <p>${price}</p>
+                <p>Price: ${price}</p>
                 {
                     features.map(feature=> <li>{feature}</li>)
                 }
