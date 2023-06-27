@@ -7,6 +7,7 @@ import SignUp from '../pages/SignUp/SignUp';
 import Phones from '../pages/Phones/Phones';
 import PrivetRoute from './PrivetRoute';
 import Dashboard from '../layout/Dashboard';
+import MyCart from '../pages/Dashboard/MyCart/MyCart';
 
 const router = createBrowserRouter([
    {
@@ -35,35 +36,11 @@ const router = createBrowserRouter([
     path:'dashboard',
     element: <PrivetRoute><Dashboard></Dashboard></PrivetRoute>,
     children:[
-        {
-            path:'userhome',
-            element:<UserHome></UserHome>
-        },
-        {
-            path:'mycart',
-            element:<Mycart></Mycart>
-        }
-        ,
-        {
-            path:'payment',
-            element:<Payment></Payment>
-        },
-        {
-            path:'adminhome',
-            element:<AdminRoute><AdminHome></AdminHome></AdminRoute>
-        },
-        {
-            path:'allusers',
-            element:<AdminRoute><AllUsers></AllUsers></AdminRoute>
-        },
-        {
-            path:'additem',
-            element:<AdminRoute><AddItem></AddItem></AdminRoute>
-        },
-        {
-            path:'manageitems',
-            element:<AdminRoute><ManageItems></ManageItems></AdminRoute>
-        }
+       {
+        path:'mycart',
+        element: <MyCart></MyCart>
+       }
+        
     ]
 }
 ])
