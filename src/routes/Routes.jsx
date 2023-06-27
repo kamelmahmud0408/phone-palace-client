@@ -8,6 +8,8 @@ import Phones from '../pages/Phones/Phones';
 import PrivetRoute from './PrivetRoute';
 import Dashboard from '../layout/Dashboard';
 import MyCart from '../pages/Dashboard/MyCart/MyCart';
+import AllUser from '../pages/Dashboard/AllUser/AllUser';
+import AdminRoute from './AdminRoute';
 
 const router = createBrowserRouter([
    {
@@ -39,6 +41,11 @@ const router = createBrowserRouter([
        {
         path:'mycart',
         element: <MyCart></MyCart>
+       }
+       ,
+       {
+        path:'allusers',
+        element:<AdminRoute><AllUser></AllUser></AdminRoute>
        }
         
     ]
