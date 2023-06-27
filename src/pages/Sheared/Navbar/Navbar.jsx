@@ -36,7 +36,7 @@ const Navbar = () => {
                     <li className="px-6 hover:text-cyan-600"><Link to='/about'>About</Link></li>
                     <li className="px-6 hover:text-cyan-600"><Link to='/skills'>Skills</Link></li>
                     <li className="px-6 hover:text-cyan-600"><Link to='/projects'>Projects</Link></li>
-                    <li className="px-6 hover:text-cyan-600"><Link to='/contact'>Contact</Link></li>
+                    <li className="px-6 hover:text-cyan-600"><Link to='/login'>login</Link></li>
                       
                 </ul>
             </div>
