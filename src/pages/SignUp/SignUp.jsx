@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../provider/AuthProvider';
 import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';
+import SocialLogin from '../Sheared/SocialLogin/SocialLogin';
 
 const SignUp = () => {
 
