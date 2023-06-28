@@ -32,7 +32,7 @@ const AddPhone = () => {
     feature,
     category
   }
-        fetch('http://localhost:5000/phones', {
+        fetch('https://phone-palace-server-kamelmahmud0408.vercel.app/phones', {
             method: 'POST',
             headers: {
                 "content-type": "application/json"

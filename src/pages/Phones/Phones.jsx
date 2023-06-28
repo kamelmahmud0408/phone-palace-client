@@ -5,7 +5,7 @@ const Phones = () => {
     const [phones , setPhones]=useState([])
 
     useEffect(()=>{
-        fetch('http://localhost:5000/phones')
+        fetch('https://phone-palace-server-kamelmahmud0408.vercel.app/phones')
         .then(res=> res.json())
         .then( data => {
             setPhones(data)
