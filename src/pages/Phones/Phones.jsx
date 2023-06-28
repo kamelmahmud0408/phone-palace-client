@@ -13,10 +13,13 @@ const Phones = () => {
         })
     },[])
     return (
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-5 mx-10 mt-20'>
+        <div>
+            <h1 className='text-4xl text-cyan-500 font-bold text-center mt-20'>All Phones</h1>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-5 mx-10 mt-20'>
             {
                 phones.map(phone=> <PhoneDetails key={phone._id} phone={phone}></PhoneDetails>)
             }
+        </div>
         </div>
     );
 };

@@ -48,10 +48,7 @@ const router = createBrowserRouter([
         path:'allusers',
         element:<AdminRoute><AllUser></AllUser></AdminRoute>
        },
-       {
-        path:'addphone',
-        element:<AdminRoute><AddPhone></AddPhone></AdminRoute>
-       }
+       
         
     ]
 }
