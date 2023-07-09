@@ -30,7 +30,8 @@ const Dashboard = () => {
                         </> : <>
                             <li><NavLink to='/dashboard/userhome'>User Home</NavLink></li>
                             <li><NavLink to='/dashboard/history'>Payment History</NavLink></li>
-                            <li><NavLink to='/dashboard/mycart'>My Cart <span className="badge badge-secondary">+{cart?.length || 0}</span></NavLink></li>
+                            <li><NavLink to='/dashboard/mycart'>My Cart <span className="badge badge-secondary">
+                                +{cart?.length || 0}</span></NavLink></li>
                         </>
                     }
 

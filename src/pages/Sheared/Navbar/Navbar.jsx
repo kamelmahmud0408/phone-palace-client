@@ -47,21 +47,20 @@ const Navbar = () => {
                     <ul className="flex items-center gap-1 py-2 text-lg">
                         <li className="px-6 hover:text-cyan-600"><Link to='/'>Home</Link></li>
                         <li className="px-6 hover:text-cyan-600"><Link to='/phones'>Phones</Link></li>
-                        <li className="px-6 hover:text-cyan-600"><Link to='/dashboard/mycart'>
-                            <button className="btn gap-2">
-                                <ion-icon name="cart"></ion-icon>
-                                <div className="badge badge-secondary">+{cart?.length || 0}</div>
-                            </button>
-                        </Link></li>
-
-
-
-
+                        
                         {
                             user ? <div>{
                                 user && <span className='text-black flex flex-col lg:flex-row lg:items-center gap-4'>
+                                    <li className="px-6 hover:text-cyan-600"><Link to='/dashboard/mycart'>
+                                        <button className="btn gap-2">
+                                            <ion-icon name="cart"></ion-icon>
+                                            <div className="badge badge-secondary">+{cart?.length || 0}</div>
+                                        </button>
+                                    </Link></li>
                                     {
-                                        isAdmin ? <li><Link to='/dashboard/allusers'>Dashboard</Link></li> : <li><Link to='/dashboard/mycart'>Dashboard</Link></li>
+                                        isAdmin ?
+                                            <li><Link to='/dashboard/allusers'>Dashboard</Link></li> : <li><Link to='/dashboard/mycart'>Dashboard</Link></li>
+
                                     }
 
                                     <li className="px-6 hover:text-cyan-600"> <div className='tooltip text-start' data-tip={user.displayName}  ><img className='w-10 h-10 rounded-full tooltip' src={user.photoURL} alt="" /></div></li> <li className="px-6 hover:text-cyan-600"><Link onClick={handleLogOut} to='/login'>LogOut</Link></li> </span>
@@ -91,7 +90,7 @@ const Navbar = () => {
 
                         <li onClick={() => setOpen(false)} className="px-6 hover:text-cyan-600"><Link to='/'>Home</Link></li>
                         <li onClick={() => setOpen(false)} className="px-6 hover:text-cyan-600"><Link to='/phones'>All Phones</Link></li>
-                        <li onClick={() => setOpen(false)}  className="px-6 hover:text-cyan-600"><Link to='/dashboard/mycart'>
+                        <li onClick={() => setOpen(false)} className="px-6 hover:text-cyan-600"><Link to='/dashboard/mycart'>
                             <button className="btn gap-2">
                                 <ion-icon name="cart"></ion-icon>
                                 <div className="badge badge-secondary">+{cart?.length || 0}</div>
@@ -104,8 +103,8 @@ const Navbar = () => {
                                         isAdmin ? <li onClick={() => setOpen(false)} ><Link to='/dashboard/allusers'>Dashboard</Link></li> : <li onClick={() => setOpen(false)} ><Link to='/dashboard/mycart'>Dashboard</Link></li>
                                     }
 
-                                    <li onClick={() => setOpen(false)}  className="px-6 hover:text-cyan-600"> <div className='tooltip text-start' data-tip={user.displayName}  ><img className='w-10 h-10 rounded-full tooltip' src={user.photoURL} alt="" /></div></li> <li className="px-6 hover:text-cyan-600"><Link onClick={handleLogOut} to='/login'>LogOut</Link></li> </span>
-                            }</div> : <li onClick={() => setOpen(false)}  className="px-6 hover:text-cyan-600"><Link to='/login'>login</Link></li>
+                                    <li onClick={() => setOpen(false)} className="px-6 hover:text-cyan-600"> <div className='tooltip text-start' data-tip={user.displayName}  ><img className='w-10 h-10 rounded-full tooltip' src={user.photoURL} alt="" /></div></li> <li className="px-6 hover:text-cyan-600"><Link onClick={handleLogOut} to='/login'>LogOut</Link></li> </span>
+                            }</div> : <li onClick={() => setOpen(false)} className="px-6 hover:text-cyan-600"><Link to='/login'>login</Link></li>
                         }
 
                     </ul>

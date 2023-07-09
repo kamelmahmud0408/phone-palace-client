@@ -6,7 +6,7 @@ import Swal from 'sweetalert2';
 
 const AddPhone = () => {
 
-    
+
     // const navigate = useNavigate()
     // const location = useLocation()
 
@@ -23,15 +23,15 @@ const AddPhone = () => {
 
     const onSubmit = (data) => {
         console.log(data)
-        const {phoneName,image,email,price,feature,category}=data;
-  const phoneItems={
-    phoneName,
-    image,
-    email,
-    price,
-    feature,
-    category
-  }
+        const { phoneName, image, email, price, features, category } = data;
+        const phoneItems = {
+            phoneName,
+            image,
+            email,
+            price:parseInt(price),
+            features: Array.isArray(features) ? features : [features],
+            category
+        }
         fetch('http://localhost:5000/phones', {
             method: 'POST',
             headers: {
@@ -58,86 +58,86 @@ const AddPhone = () => {
 
     return (
         <div className=' w-full h-full ms-10' >
-        <h1 className='text-center text-3xl text-cyan-500 font-bold my-10'>Add a Class</h1>
-        <form onSubmit={handleSubmit(onSubmit)}>
-            {errors.exampleRequired && <span>This field is required</span>}
+            <h1 className='text-center text-3xl text-cyan-500 font-bold my-10'>Add a Class</h1>
+            <form onSubmit={handleSubmit(onSubmit)}>
+                {errors.exampleRequired && <span>This field is required</span>}
 
-            <div className='grid grid-cols-2 gap-3'>
-                <div className='mb-3'>
-                    <h3 className='text-xl font-semibold mb-3'>Phone Name</h3>
+                <div className='grid grid-cols-2 gap-3'>
+                    <div className='mb-3'>
+                        <h3 className='text-xl font-semibold mb-3'>Phone Name</h3>
 
-                    <input
-                        className=" w-full p-2 border"
-                        {...register("phoneName")}
-                        placeholder="Phone Name "
+                        <input
+                            className=" w-full p-2 border"
+                            {...register("phoneName")}
+                            placeholder="Phone Name "
 
-                    />
+                        />
+
+                    </div>
+                    <div>
+                        <h3 className='text-xl font-semibold mb-3'>Phone Image</h3>
+                        <input
+                            className="w-full p-2 border"
+                            {...register("image")}
+                            placeholder="image link"
+                            type="url"
+
+                        />
+                    </div>
+
+
+                    <div className='mb-3'>
+                        <h3 className='text-xl font-semibold mb-3'>Admin Email</h3>
+
+                        <input
+                            className="w-full p-2 border"
+                            {...register("email")}
+                            placeholder="email"
+                            defaultValue={user?.email}
+
+                        />
+
+                    </div>
+                    <div className='mb-3'>
+                        <h3 className='text-xl font-semibold mb-3'>Price</h3>
+
+                        <input
+                            className="w-full p-2 border"
+                            {...register("price" ,{ required: true })}
+                            placeholder="Price"
+
+                        />
+
+                    </div>
+                    <div className='mb-3'>
+                        <h3 className='text-xl font-semibold mb-3'>Feature</h3>
+
+                        <input
+                            className="w-full p-2 border"
+                            {...register("features" ,{ required: true })}
+                            placeholder="Feature"
+
+                        />
+
+                    </div>
+                    <div className='mb-3'>
+                        <h3 className='text-xl font-semibold mb-3'>Category</h3>
+
+                        <input
+                            className="w-full p-2 border"
+                            {...register("category")}
+                            placeholder="Category"
+
+                        />
+
+                    </div>
 
                 </div>
-                <div>
-                    <h3 className='text-xl font-semibold mb-3'>Phone Image</h3>
-                    <input
-                        className="w-full p-2 border"
-                        {...register("image")}
-                        placeholder="image link"
-                        type="url"
-
-                    />
-                </div>
-
-                
-                <div className='mb-3'>
-                    <h3 className='text-xl font-semibold mb-3'>Admin Email</h3>
-
-                    <input
-                        className="w-full p-2 border"
-                        {...register("email")}
-                        placeholder="email"
-                        defaultValue={user?.email}
-
-                    />
-
-                </div>
-                <div className='mb-3'>
-                    <h3 className='text-xl font-semibold mb-3'>Price</h3>
-
-                    <input
-                        className="w-full p-2 border"
-                        {...register("price")}
-                        placeholder="Price"
-
-                    />
-
-                </div>
-                <div className='mb-3'>
-                    <h3 className='text-xl font-semibold mb-3'>Feature</h3>
-
-                    <input
-                        className="w-full p-2 border"
-                        {...register("feture")}
-                        placeholder="Feature"
-
-                    />
-
-                </div>
-                <div className='mb-3'>
-                    <h3 className='text-xl font-semibold mb-3'>Category</h3>
-
-                    <input
-                        className="w-full p-2 border"
-                        {...register("category")}
-                        placeholder="Category"
-
-                    />
-
-                </div>
-                   
-            </div>
 
 
-            <input className=" btn-primary mt-5 w-full" value="Add Class" type="submit" />
-        </form>
-    </div>
+                <input className=" btn-primary mt-5 w-full" value="Add Class" type="submit" />
+            </form>
+        </div>
     );
 };
 

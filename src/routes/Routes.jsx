@@ -50,6 +50,10 @@ const router = createBrowserRouter([
         element:<AdminRoute><AllUser></AllUser></AdminRoute>
        },
        {
+        path:'addphone',
+        element:<AddPhone></AddPhone>
+       },
+       {
         path:'payment',
         element:<Payment></Payment>
        }
