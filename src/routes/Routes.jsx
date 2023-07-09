@@ -12,6 +12,8 @@ import AllUser from '../pages/Dashboard/AllUser/AllUser';
 import AdminRoute from './AdminRoute';
 import AddPhone from '../pages/Dashboard/AddPhone/AddPhone';
 import Payment from '../pages/Dashboard/Payment/Payment';
+import ManagePhone from '../pages/Dashboard/ManagePhone/ManagePhone';
+import UpdatePhone from '../pages/Dashboard/UpdatePhone/UpdatePhone';
 
 const router = createBrowserRouter([
    {
@@ -52,6 +54,15 @@ const router = createBrowserRouter([
        {
         path:'addphone',
         element:<AddPhone></AddPhone>
+       },
+       {
+        path:'managephone',
+        element:<ManagePhone></ManagePhone>
+       },
+       {
+        path:'/dashboard/updatephone/:id',
+        element:<UpdatePhone></UpdatePhone>,
+        loader:({params})=>fetch(`http://localhost:5000/phones/${params.id}`)
        },
        {
         path:'payment',

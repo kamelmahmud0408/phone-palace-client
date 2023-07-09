@@ -1,18 +1,17 @@
 import React, { useContext } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../provider/AuthProvider';
 import { useForm } from 'react-hook-form';
 import Swal from 'sweetalert2';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 
-const AddPhone = () => {
+const UpdatePhone = () => {
 
-
-    const navigate = useNavigate()
+     const navigate = useNavigate()
     const location = useLocation()
 
     const from = location.state?.from?.pathname || '/dashboard/managephone'
 
-
+    const {id}=useParams()
     const { user } = useContext(AuthContext)
 
     const {
@@ -32,8 +31,8 @@ const AddPhone = () => {
             features: Array.isArray(features) ? features : [features],
             category
         }
-        fetch('http://localhost:5000/phones', {
-            method: 'POST',
+        fetch(`http://localhost:5000/phones/${id}`, {
+            method: 'PUT',
             headers: {
                 "content-type": "application/json"
             },
@@ -43,10 +42,10 @@ const AddPhone = () => {
             .then(res => res.json())
             .then(result => {
                 console.log(result)
-                if (result.insertedId) {
+                if (result.modifiedCount > 0) {
                     Swal.fire({
                         title: 'Success!',
-                        text: 'Phone added successfully',
+                        text: 'Phone Update successfully',
                         icon: 'success',
                         confirmButtonText: 'Cool'
                     })
@@ -54,7 +53,6 @@ const AddPhone = () => {
                  navigate(from, { replace: true })
             })
     }
-
 
     return (
         <div className=' w-full h-full ms-10' >
@@ -135,10 +133,10 @@ const AddPhone = () => {
                 </div>
 
 
-                <input className=" btn-primary mt-5 w-full" value="Add Class" type="submit" />
+                <input className=" btn-primary mt-5 w-full" value="Update Class" type="submit" />
             </form>
         </div>
     );
 };
 
-export default AddPhone;
+export default UpdatePhone;
