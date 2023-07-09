@@ -11,6 +11,7 @@ import MyCart from '../pages/Dashboard/MyCart/MyCart';
 import AllUser from '../pages/Dashboard/AllUser/AllUser';
 import AdminRoute from './AdminRoute';
 import AddPhone from '../pages/Dashboard/AddPhone/AddPhone';
+import Payment from '../pages/Dashboard/Payment/Payment';
 
 const router = createBrowserRouter([
    {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
         path:'allusers',
         element:<AdminRoute><AllUser></AllUser></AdminRoute>
        },
+       {
+        path:'payment',
+        element:<Payment></Payment>
+       }
        
         
     ]

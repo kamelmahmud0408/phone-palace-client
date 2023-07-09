@@ -9,7 +9,7 @@ const AllUser = () => {
         return res.data;
     })
     const handleMakeAdmin=(user)=>{
-        fetch(`https://phone-palace-server-kamelmahmud0408.vercel.app/users/admin/${user._id}`,{
+        fetch(`http://localhost:5000/users/admin/${user._id}`,{
             method:'PATCH'
         })
         .then(res => res.json())

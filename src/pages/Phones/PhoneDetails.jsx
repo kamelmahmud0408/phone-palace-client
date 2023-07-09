@@ -15,7 +15,7 @@ const PhoneDetails = ({ phone }) => {
         console.log(item)
         if (user && user.email) {
             const cartItem={phoneItemId:_id, name, image, price ,email: user.email}
-            fetch('https://phone-palace-server-kamelmahmud0408.vercel.app/carts',{
+            fetch('http://localhost:5000/carts',{
                 method:'POST',
                 headers:{
                     'content-type':'application/json'
@@ -63,7 +63,7 @@ const PhoneDetails = ({ phone }) => {
                     features.map(feature=> <li>{feature}</li>)
                 }
                 <div className="card-actions justify-end">
-                    <button onClick={() => handleAddToCart(phone)}  className="btn btn-primary">Buy Now</button>
+                    <button onClick={() => handleAddToCart(phone)}  className="btn btn-primary border-t-0 border-l-0 border-r-0 border-b-4">Buy Now</button>
                 </div>
             </div>
         </div>

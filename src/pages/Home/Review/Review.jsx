@@ -11,7 +11,7 @@ const Review = () => {
 
     const [reviews, setReview] = useState([])
     useEffect(() => {
-        fetch('https://phone-palace-server-kamelmahmud0408.vercel.app/review')
+        fetch('http://localhost:5000/review')
             .then(res => res.json())
             .then(data => {
                 setReview(data)
@@ -19,7 +19,7 @@ const Review = () => {
     }, [])
 
     return (
-        <section className='my-20'>
+        <section className='mt-20 mb-10 shadow-lg'>
       <h1 className='text-4xl text-cyan-500 font-bold text-center mt-10'>Customer Testimonials</h1>
         <Swiper navigation={true} modules={[Navigation]} className="mySwiper ">
 
