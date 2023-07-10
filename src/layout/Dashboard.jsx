@@ -7,7 +7,7 @@ const Dashboard = () => {
     const [cart] = useCart()
 
     // const isAdmin = true;
-     const [isAdmin]=useAdmin()
+    const [isAdmin] = useAdmin()
 
     return (
         <div className="drawer lg:drawer-open">
@@ -22,16 +22,16 @@ const Dashboard = () => {
                 <ul className="menu p-4 w-80 h-full bg-base-200 text-base-content">
                     {
                         isAdmin ? <>
-                            <li><NavLink to='/dashboard/adminhome'>Admin Home</NavLink></li>
+                            <li><NavLink to='/dashboard/allusers'> All Users</NavLink></li>
                             <li><NavLink to='/dashboard/addphone'> Add an phone</NavLink></li>
                             <li><NavLink to='/dashboard/managephone'>Manage phone</NavLink></li>
-                            <li><NavLink to='/dashboard/allusers'> All Users</NavLink></li>
+
 
                         </> : <>
-                            <li><NavLink to='/dashboard/userhome'>User Home</NavLink></li>
-                            <li><NavLink to='/dashboard/history'>Payment History</NavLink></li>
                             <li><NavLink to='/dashboard/mycart'>My Cart <span className="badge badge-secondary">
                                 +{cart?.length || 0}</span></NavLink></li>
+                            <li><NavLink to='/dashboard/history'>Payment History</NavLink></li>
+
                         </>
                     }
 

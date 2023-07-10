@@ -14,6 +14,7 @@ import AddPhone from '../pages/Dashboard/AddPhone/AddPhone';
 import Payment from '../pages/Dashboard/Payment/Payment';
 import ManagePhone from '../pages/Dashboard/ManagePhone/ManagePhone';
 import UpdatePhone from '../pages/Dashboard/UpdatePhone/UpdatePhone';
+import PaymentHistory from '../pages/Dashboard/PaymentHistory/PaymentHistory';
 
 const router = createBrowserRouter([
    {
@@ -53,11 +54,11 @@ const router = createBrowserRouter([
        },
        {
         path:'addphone',
-        element:<AddPhone></AddPhone>
+        element:<AdminRoute><AddPhone></AddPhone></AdminRoute>
        },
        {
         path:'managephone',
-        element:<ManagePhone></ManagePhone>
+        element:<AdminRoute><ManagePhone></ManagePhone></AdminRoute>
        },
        {
         path:'/dashboard/updatephone/:id',
@@ -67,6 +68,10 @@ const router = createBrowserRouter([
        {
         path:'payment',
         element:<Payment></Payment>
+       },
+       {
+        path:'history',
+        element:<PaymentHistory></PaymentHistory>
        }
        
         

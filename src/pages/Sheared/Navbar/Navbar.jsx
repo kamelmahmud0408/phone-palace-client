@@ -47,19 +47,27 @@ const Navbar = () => {
                     <ul className="flex items-center gap-1 py-2 text-lg">
                         <li className="px-6 hover:text-cyan-600"><Link to='/'>Home</Link></li>
                         <li className="px-6 hover:text-cyan-600"><Link to='/phones'>Phones</Link></li>
-                        
+
                         {
                             user ? <div>{
                                 user && <span className='text-black flex flex-col lg:flex-row lg:items-center gap-4'>
-                                    <li className="px-6 hover:text-cyan-600"><Link to='/dashboard/mycart'>
+                                    {/* <li className="px-6 hover:text-cyan-600"><Link to='/dashboard/mycart'>
                                         <button className="btn gap-2">
                                             <ion-icon name="cart"></ion-icon>
                                             <div className="badge badge-secondary">+{cart?.length || 0}</div>
                                         </button>
-                                    </Link></li>
+                                    </Link></li> */}
                                     {
                                         isAdmin ?
-                                            <li><Link to='/dashboard/allusers'>Dashboard</Link></li> : <li><Link to='/dashboard/mycart'>Dashboard</Link></li>
+                                            <li><Link to='/dashboard/allusers'>Dashboard</Link></li> : <>
+                                                <li><Link to='/dashboard/mycart'>Dashboard</Link></li>
+                                                <li className="px-6 hover:text-cyan-600"><Link to='/dashboard/mycart'>
+                                                    <button className="btn gap-2">
+                                                        <ion-icon name="cart"></ion-icon>
+                                                        <div className="badge badge-secondary">+{cart?.length || 0}</div>
+                                                    </button>
+                                                </Link></li>
+                                            </>
 
                                     }
 
